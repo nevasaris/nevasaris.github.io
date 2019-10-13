@@ -1,58 +1,152 @@
+<!DOCTYPE html>
 <html>
-<head><title>Liudas Matijošius</title>
-  <meta charset="UTF-8">
+<head>
+<title>Liudas Matijošius</title>
+<meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <style>
+* {
+  box-sizing: border-box;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: block;
+}
+
+[class*="col-"] {
+  float: left;
+  padding: 15px;
+}
+
 img {
-   max-width: 100%;
+   width: 100%;
     height: auto;
   display: block;
   margin-left: auto;
-  margin-right: auto;
-  margin-top: 250px;
-  margin-bottom: 30px;}
-body {
- margin-top: 0px;
- text-align: center;
+  margin-right: auto;}
+
+html {
  font-family: "Roboto", "Arial", serif;
-  margin-bottom: 100px;
- line-height: 1.5;}
-h2{margin-top: 75px;}
-/*div{padding-bottom:150px;}*/
-</style></head>
+}
+
+
+.menu ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu li {
+  padding: 8px;
+  margin-bottom: 7px;
+  background-color: #33b5e5;
+  color: #ffffff;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+.menu li:hover {
+  background-color: #0099cc;
+}
+
+.aside {
+  background-color: #33b5e5;
+  padding: 15px;
+  color: #ffffff;
+  text-align: center;
+  font-size: 14px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+.footer {
+  text-align: center;
+  font-size: 12px;
+  padding: 15px;
+}
+
+/* For desktop: */
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+@media only screen and (max-width: 700px) {
+  /* For mobile phones: */
+  [class*="col-"] {
+    width: 100%;
+  }
+}
+
+#metrika {
+  text-align: right;
+
+  margin-top: 10px;
+  margin-bottom: 180px;
+  font-size: 14px;
+}
+h2{
+ margin-bottom: 2px }
+</style>
+</head>
 <body>
-<h2>Liudas Matijošius</h2>
-<div>liudas.matijosius@gmail.com</br></br><a href=cv.html>CV</a></div>
+
+
+<div class="row">
+  <div class="col-3 menu">
+  </div>
+
+  <div class="col-6">
+    <h2>Liudas Matijošius</h2>
+	<a href=cv.html>CV</a>
+    <p></p></br></br></br>
 <img src="apskaiciuotas.JPG">
-Apskaičiuotas peizažas, 2018, 43 x 58 cm, drobė, aliejus, varinė viela
+<div id="metrika">Apskaičiuotas peizažas, 2018, 43 x 58 cm, drobė, aliejus, varinė viela</div>
 <img src="kova.JPG">
-Kova, 2019, 50 x 60 cm, drobė, aliejus
+<div id="metrika">Kova, 2019, 50 x 60 cm, drobė, aliejus</div>
 <img src="prudas.JPG">
-Prūdas, 2019, 60 x 60 cm, drobė, aliejus
+<div id="metrika">Prūdas, 2019, 60 x 60 cm, drobė, aliejus</div>
 <img src="spyna.JPG">
-Spyna 2019, 65 x 80 cm, drobė, aliejus
+<div id="metrika">Spyna 2019, 65 x 80 cm, drobė, aliejus</div>
 <img src="vigvamas.JPG">
-Vigvamas, 2018, 24 x 30 cm, drobė, aliejus
+<div id="metrika">Vigvamas, 2018, 24 x 30 cm, drobė, aliejus</div>
 <img src="planine.JPG">
-Planinė, 2019, 60 x 70 cm, drobė, aliejus
+<div id="metrika">Planinė, 2019, 60 x 70 cm, drobė, aliejus</div>
 <img src="stabu.JPG">
-Stabų zenitas, 2018, 46 x 50 cm, kartonas, aliejus
+<div id="metrika">Stabų zenitas, 2018, 46 x 50 cm, kartonas, aliejus</div>
 <img src="raud.JPG">
-“C’est le petit livre rouge / Qui fait que tout enfin bouge”
+<div id="metrika">“C’est le petit livre rouge / Qui fait que tout enfin bouge”
 </br>“Tai raudona knygelė, kuri galiausiai visa
-išjudina”</br> 2018, 28.5 x 27 cm, kartonas, aliejus
+išjudina”</br> 2018, 28.5 x 27 cm, kartonas, aliejus</div>
 <img src="planine.JPG">
-Planinė, 2019, 60 x 70 cm, drobė, aliejus
+<div id="metrika">Planinė, 2019, 60 x 70 cm, drobė, aliejus</div>
 <img src="siandien.JPG">
-“In a world that is really upside down, the true is a moment of the false” - Guy Debord</br>
-2019, 60 x 80 cm, drobė, aliejus, varinė viela
+<div id="metrika">“In a world that is really upside down, the true is a moment of the false” - Guy Debord</br>
+2019, 60 x 80 cm, drobė, aliejus, varinė viela</div>
 <img src="bepavadinimo.JPG">
-Be pavadinimo I, 2018, 40 x 50 cm, drobė, aliejus
+<div id="metrika">Be pavadinimo I, 2018, 40 x 50 cm, drobė, aliejus</div>
 <img src="grikiai.JPG">
-Grikiai, 2018, 60 x 80 cm, drobė, aliejus
+<div id="metrika">Grikiai, 2018, 60 x 80 cm, drobė, aliejus</div>
 <img src="ku2.JPG">
-KU, 2018, 80 x 90 cm, drobė, aliejus
+<div id="metrika">KU, 2018, 80 x 90 cm, drobė, aliejus</div>
+  </div>
+
+  <div class="col-3 right">
+  </div>
+</div>
+
+<div class="footer">
+  <p></p>
+</div>
+
 </body>
 </html>
-
 
