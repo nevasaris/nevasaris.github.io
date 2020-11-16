@@ -19,6 +19,15 @@
   box-sizing: border-box;
 }
 
+
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+}
+
 .row::after {
   content: "";
   clear: both;
@@ -31,8 +40,8 @@
 }
 
 img {
-   width: 100%;
-    height: auto;
+  width: 100%;
+  height: auto;
   display: block;
   margin-left: auto;
   margin-right: auto;}
@@ -78,17 +87,22 @@ html {
 @media only screen and (max-width: 700px) {
   /* For mobile phones: */
   [class*="col-"] {
-    width: 100%;
+    width: 100%; padding: 0; margin: 0 auto;
   }
+  #header,#metrika{
+  margin: 0.5em;
+}
 }
 
 #metrika {
   text-align: right;
 
   margin-top: 20px;
-  margin-bottom: 180px;
+  margin-bottom: 170px;
   font-size: 14px;
 }
+
+
 #email {
   font-size: 14px;
 }
@@ -112,13 +126,14 @@ hr{border:0;height:0;border-top:1px solid rgba(0,0,0,0.1);border-bottom:1px soli
 
 <div class="col-6">
 
-
+<div id=header>
 <div id="title">Liudas Matijošius</div>
 <div id="email"><a href=mailto:liudas.matijosius@gmail.com>liudas.matijosius@gmail.com</a></div>
+
 <hr>
 <div id="title2">Tapyba neišplėstame lauke </div>
 2018-2019</br></br></br>
-
+</div>
 
 <img src="apskaiciuotas.JPG">
 <div id="metrika">Apskaičiuotas peizažas, 2018, 43 x 58 cm, drobė, aliejus, varinė viela</div>
