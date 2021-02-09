@@ -34,6 +34,7 @@
   
   img {
     width: auto;
+
     max-height: 70%;
     display: block;
     margin-left: auto;
@@ -107,6 +108,8 @@
         margin-left: auto;
         margin-right: auto;
         margin-bottom: 10px;}
+    img{max-width: 100%;}
+
       }
    
 
